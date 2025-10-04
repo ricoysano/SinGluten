@@ -1,0 +1,181 @@
+/* Blanco suave: Para el gorro de chef y la textura de la tela.
+
+Código de color: #F2F2F2
+
+Rojo brillante: Para el círculo y la parte central del logo, que resalta el mensaje "Sin T.A.C.C."
+
+Código de color: #F23C3C
+
+Amarillo cálido: Para los espigas de trigo que representan un producto sin gluten.
+
+Código de color: #F2C95D
+
+Gris oscuro o negro: Para el texto "Rico & Sano" y "Sin T.A.C.C.", que se destacan sobre el fondo.
+
+Código de color: #333333
+
+Beige claro: Para dar suavidad al fondo y equilibrar los tonos más vibrantes.
+
+Código de color: #E5E5E5 
+🎨 Paleta de colores recomendada (basada en tu logo)
+1. Rojo Protagonista (para botones, llamados a la acción)
+
+HEX: #D63434
+
+Uso: Botones primarios, enlaces destacados, íconos activos.
+
+2. Amarillo Trigo (para acentos o íconos)
+
+HEX: #F2B705
+
+Uso: Elementos decorativos, resaltado de beneficios, íconos amigables.
+
+3. Blanco Gorro (fondo principal o secciones limpias)
+
+HEX: #F7F7F7
+
+Uso: Fondo de secciones, áreas con mucho texto.
+
+4. Gris Oscuro Texto (texto principal)
+
+HEX: #2E2E2E
+
+Uso: Texto de párrafos, menús, encabezados secundarios.
+
+5. Beige Neutro (color de fondo suave alternativo)
+
+HEX: #EDE6DD
+
+Uso: Fondo de secciones secundarias o tarjetas de contenido.
+
+6. Gris Medio (bordes, sombras, separadores)
+
+HEX: #B0B0B0
+
+Uso: Líneas divisorias, bordes de tarjetas, sombreado sutil.*/
+.video {
+    display: flex;
+    border: green solid;
+
+    width: 90%;
+    height: auto;
+}
+
+header {
+    
+    padding: 1rem;
+   
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+        margin-left: 13%;
+       margin-right: 13%;
+}
+
+
+.logo img {
+    
+    padding: 1rem;
+    width: 20%;
+    height: auto;
+   
+    align-items: center;
+}
+
+nav ul {
+    /*border: green solid;*/
+    padding: 1rem;
+    display: flex;
+    display: center;
+    list-style: none;
+    justify-content: center
+}
+
+nav a {
+    /*border: red solid;*/
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+.carrito i {
+   
+    color: blue;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap:10px;
+    margin: 10px;
+    
+}
+
+.productos article {
+    border: red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+  font-family: "Instrument Serif", serif;
+  font-weight: 350;
+  font-style: normal;
+
+
+
+
+}
+
+.card h2, .card img, .card p{
+    border: blue solid;
+}
+
+
+.card img{
+    width: 80%;
+   
+
+    
+}
+
+.gps {
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+
+
+
+body {
+    
+    background-image: url(/img/backgroundBody.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Clase 4 ver cards y articulo y boton carrito*/
+/*@media{}*/

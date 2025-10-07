@@ -125,7 +125,7 @@ nav a {
 }
 
 .productos article {
-
+    border: red solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,13 +169,44 @@ body {
     background-position: center;
     
     
-}
-
 footer {
-    display: flex;
-    justify-content: center;
+    background-color: #f1eded;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+.redes {
+     margin: 0 15px;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.redes i {
+    width: 80px;  /* Tamaño de los íconos */
+    height: 80px;  /* Tamaño de los íconos */
+    transition: transform 0.3s ease; /* Agregar transición para el hover */
+}
+.redes:hover img {
+    transform: scale(1.1);  /* Aumentar el tamaño del ícono al pasar el ratón */
+}
+
+.gps iframe{
+    
+    width: 100%; /* Hace que el mapa ocupe todo el ancho disponible */
+    max-width: 600px; /* El mapa tendrá un tamaño máximo de 600px */
+    height: 450px;
+   
+    margin-top: 20px;
 
 }
 
-/*Clase 4 ver cards y articulo y boton carrito*/
-/*@media{}*/
+footer div p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+}

@@ -16,7 +16,7 @@ Código de color: #333333
 
 Beige claro: Para dar suavidad al fondo y equilibrar los tonos más vibrantes.
 
-Código de color: #E5E5E5 
+Código de color: #E5E5E5
 🎨 Paleta de colores recomendada (basada en tu logo)
 1. Rojo Protagonista (para botones, llamados a la acción)
 
@@ -62,32 +62,33 @@ Uso: Líneas divisorias, bordes de tarjetas, sombreado sutil.*/
 }
 
 header {
-    
-    padding: 1rem;
-   
+
+
+
     justify-content: space-around;
     display: flex;
     align-items: center;
-    background-color: aqua;
+    background-color: aqua ;
 
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 500px;
     font-style: normal;
 }
 
 main {
-        margin-left: 13%;
-       margin-right: 13%;
+        margin-left: 10%;
+       margin-right: 10%;
 }
 
 
 .logo img {
-    
-    padding: 1rem;
-    width: 20%;
+
+    /* padding: 1rem; */
+    width: 10%;
     height: auto;
-   
+    margin-left: 50px;
+
     align-items: center;
 }
 
@@ -97,31 +98,35 @@ nav ul {
     display: flex;
     display: center;
     list-style: none;
-    justify-content: center
+    justify-content: center;
+   
 }
 
 nav a {
     /*border: red solid;*/
     padding: 1rem;
     text-decoration: none;
+    margin-right: 40px;
 
 }
 
 .carrito i {
-   
+
     color: blue;
     font-size: 1.5rem;
     border-radius: 6px;
     padding: 1rem;
+     margin-right: 40px;
 }
 
 .productos{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    gap:10px;
-    margin: 10px;
-    
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+    gap:1rem;
+    margin: 1rem;
+
+
 }
 
 .productos article {
@@ -130,14 +135,22 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    
+    border: 20px green solid;
   font-family: "Instrument Serif", serif;
   font-weight: 350;
   font-style: normal;
 
 
 
+.card{
 
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    margin: 7px green solid;
+
+
+}
 }
 
 .card h2, .card img, .card p{
@@ -146,10 +159,15 @@ nav a {
 
 
 .card img{
-    width: 80%;
-   
 
-    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin: 10% red solid;
+    border-radius: 15px;
+
+
+
 }
 
 .gps {
@@ -161,14 +179,14 @@ nav a {
 
 
 body {
-    
+
     background-image: url(/img/backgroundBody.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
-    
-    
+
+
 footer {
     background-color: #f1eded;
     color: white;
@@ -178,35 +196,39 @@ footer {
 
 footer section {
     margin-bottom: 20px;
+
+
 }
 
 .redes {
-     margin: 0 15px;
-    text-decoration: none;
-    display: inline-block; 
+     margin: 15px red solid;
+     text-decoration: none;
+    display: inline-block;
+
 }
 
 .redes i {
     width: 80px;  /* Tamaño de los íconos */
     height: 80px;  /* Tamaño de los íconos */
     transition: transform 0.3s ease; /* Agregar transición para el hover */
+    font-size: 200%;
 }
 .redes:hover img {
     transform: scale(1.1);  /* Aumentar el tamaño del ícono al pasar el ratón */
 }
 
 .gps iframe{
-    
+
     width: 100%; /* Hace que el mapa ocupe todo el ancho disponible */
     max-width: 600px; /* El mapa tendrá un tamaño máximo de 600px */
     height: 450px;
-   
+
     margin-top: 20px;
 
 }
 
-footer div p {
+/* footer div p {
     margin-top: 20px;
     font-size: 14px;
-}
+} */
 }

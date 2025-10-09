@@ -194,41 +194,42 @@ footer {
     text-align: center;
 }
 
-footer section {
-    margin-bottom: 20px;
+
+    
 
 
 }
 
 .redes {
      margin: 15px red solid;
-     text-decoration: none;
-    display: inline-block;
+     display: block;
+     justify-content: center;
+    
+    
+    
+  
+     
 
 }
 
 .redes i {
+    
     width: 80px;  /* Tamaño de los íconos */
     height: 80px;  /* Tamaño de los íconos */
-    transition: transform 0.3s ease; /* Agregar transición para el hover */
-    font-size: 200%;
-}
-.redes:hover img {
-    transform: scale(1.1);  /* Aumentar el tamaño del ícono al pasar el ratón */
+   font-size: 200%;
+
+   
 }
 
 .gps iframe{
 
-    width: 100%; /* Hace que el mapa ocupe todo el ancho disponible */
+    width: 60%; /* Hace que el mapa ocupe todo el ancho disponible */
     max-width: 600px; /* El mapa tendrá un tamaño máximo de 600px */
     height: 450px;
-
-    margin-top: 20px;
+    
+   
 
 }
 
-/* footer div p {
-    margin-top: 20px;
-    font-size: 14px;
-} */
+
 }

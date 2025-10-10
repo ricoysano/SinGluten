@@ -217,6 +217,8 @@ footer {
     width: 80px;  /* Tamaño de los íconos */
     height: 80px;  /* Tamaño de los íconos */
    font-size: 200%;
+   background-color: aquamarine;
+   border-radius:50% ;
 
    
 }

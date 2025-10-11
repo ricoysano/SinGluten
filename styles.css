@@ -1,58 +1,4 @@
-/* Blanco suave: Para el gorro de chef y la textura de la tela.
 
-Código de color: #F2F2F2
-
-Rojo brillante: Para el círculo y la parte central del logo, que resalta el mensaje "Sin T.A.C.C."
-
-Código de color: #F23C3C
-
-Amarillo cálido: Para los espigas de trigo que representan un producto sin gluten.
-
-Código de color: #F2C95D
-
-Gris oscuro o negro: Para el texto "Rico & Sano" y "Sin T.A.C.C.", que se destacan sobre el fondo.
-
-Código de color: #333333
-
-Beige claro: Para dar suavidad al fondo y equilibrar los tonos más vibrantes.
-
-Código de color: #E5E5E5
-🎨 Paleta de colores recomendada (basada en tu logo)
-1. Rojo Protagonista (para botones, llamados a la acción)
-
-HEX: #D63434
-
-Uso: Botones primarios, enlaces destacados, íconos activos.
-
-2. Amarillo Trigo (para acentos o íconos)
-
-HEX: #F2B705
-
-Uso: Elementos decorativos, resaltado de beneficios, íconos amigables.
-
-3. Blanco Gorro (fondo principal o secciones limpias)
-
-HEX: #F7F7F7
-
-Uso: Fondo de secciones, áreas con mucho texto.
-
-4. Gris Oscuro Texto (texto principal)
-
-HEX: #2E2E2E
-
-Uso: Texto de párrafos, menús, encabezados secundarios.
-
-5. Beige Neutro (color de fondo suave alternativo)
-
-HEX: #EDE6DD
-
-Uso: Fondo de secciones secundarias o tarjetas de contenido.
-
-6. Gris Medio (bordes, sombras, separadores)
-
-HEX: #B0B0B0
-
-Uso: Líneas divisorias, bordes de tarjetas, sombreado sutil.*/
 .video {
     display: flex;
     border: green solid;
@@ -68,7 +14,7 @@ header {
     justify-content: space-around;
     display: flex;
     align-items: center;
-    background-color: aqua ;
+    background-color: #F2C95D;
 
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -77,15 +23,15 @@ header {
 }
 
 main {
-        margin-left: 10%;
-       margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
 .logo img {
 
     /* padding: 1rem; */
-    width: 10%;
+    width: 15%;
     height: auto;
     margin-left: 50px;
 
@@ -99,7 +45,7 @@ nav ul {
     display: center;
     list-style: none;
     justify-content: center;
-   
+
 }
 
 nav a {
@@ -112,57 +58,76 @@ nav a {
 
 .carrito i {
 
-    color: blue;
-    font-size: 1.5rem;
+    color: #D63434;
+    font-size: 1rem;
     border-radius: 6px;
     padding: 1rem;
-     margin-right: 40px;
+    margin-right: 40px;
 }
 
-.productos{
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: auto;
-    gap:1rem;
-    margin: 1rem;
-
+.productos {
+    display:grid;
+   
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 3fr 3fr;
+    gap:2rem;
+    justify-items: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:#EDE6DD;
 
 }
 
 .productos article {
-    border: red solid;
+   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    border: 20px green solid;
-  font-family: "Instrument Serif", serif;
-  font-weight: 350;
-  font-style: normal;
-
-
-
-.card{
-
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-    margin: 7px green solid;
-
-
+    justify-content:space-between;
+    align-items: center;
+    border: 20px #D63434 solid;
+    font-family: "Instrument Serif", serif;
+    color: #2E2E2E;
+    font-weight: 50px;
+    padding: 5%;
+        
 }
-}
+    .card {
 
-.card h2, .card img, .card p{
+        width: 60%;
+        background-color: #F2B705;
+        overflow: visible;
+        margin: 7px green solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+.botonCarrito{
+    display:flex;
+    justify-content:center;
+    border: 2px green solid;
+    align-items: center;
+}
+.boton{
+    width: 80%;
+}
+.card h2,
+.card img,
+.card p {
     border: blue solid;
+   
+
 }
 
 
-.card img{
+.card img {
 
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     margin: 10% red solid;
     border-radius: 15px;
 
@@ -179,58 +144,51 @@ nav a {
 
 
 body {
-
-    background-image: url(/img/backgroundBody.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-position: center;
-
+    background-color: #B0B0B0;
+    
+    
+}
 
 footer {
-    background-color: #f1eded;
+    width:100%;
+    height: 10%;
+    padding: 2px;
+    background-color:#F2B705;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-
-    
-
-
-}
-
 .redes {
-     margin: 15px red solid;
-     display: block;
-     justify-content: center;
-    
-    
-    
-  
-     
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.redes i {
-    
-    width: 80px;  /* Tamaño de los íconos */
-    height: 80px;  /* Tamaño de los íconos */
-   font-size: 200%;
-   background-color: aquamarine;
-   border-radius:50% ;
+.redes div {
 
-   
-}
-
-.gps iframe{
-
-    width: 60%; /* Hace que el mapa ocupe todo el ancho disponible */
-    max-width: 600px; /* El mapa tendrá un tamaño máximo de 600px */
-    height: 450px;
-    
-   
+    width: 10%;
+    height: 10%;
+    font-size: 200%;
+    background-color: aquamarine;
+    border-radius: 100%;
+    padding: 50px red solid;
+    margin: 5px;
 
 }
 
 
+.gps iframe {
+     width: 10%;
+}
+
+.logo1 img {
+
+    /* padding: 1rem; */
+    width: 7%;
+    
+
+    align-items: center;
+}

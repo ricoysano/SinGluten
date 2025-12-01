@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,144 +16,94 @@
     <title>ricoysano</title>
 </head>
 <header>
-    
     <div class="logo"><img src="./img/logo2.png" alt="Rico & Sano"></div>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="./index.html" target="blank">Rico&Sano</a></li>
-                <li><a href="./productos.html" target="blank">Productos</a></li>
-                <li><a href="./nosotros.html" target="blank">Nosotros</a></li>
-                <li><a href="./contacto.html" target="blank">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="carrito">
-        <a href="#" target="blank">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-
-    </div>
-
-
+    <nav>
+        <ul>
+            <li><a href="./index.html" target="blank">Rico&Sano</a></li>
+            <li><a href="./productos.html" target="blank">Productos</a></li>
+            <li><a href="./nosotros.html" target="blank">Nosotros</a></li>
+            <li><a href="./contacto.html" target="blank">Contacto</a></li>
+        </ul>
+    </nav> <!-- Ícono del carrito -->
+    <div class="carrito"> <a href="#" id="boton-carrito"> <i class="fa-solid fa-cart-shopping"></i> <span
+                id="carrito-count" class="carrito-count">0</span> </a> </div> <!-- Panel lateral del carrito--->
+    <section id="carrito-panel" class="carrito-panel oculto">
+        <div class="carrito-header">
+            <h2>Carrito</h2> <button id="cerrar-carrito" class="cerrar-btn">X</button>
+        </div>
+        <ul id="lista-carrito"></ul>
+        <div id="carrito-total" class="total"></div> <button id="vaciar-carrito">Vaciar carrito</button>
+    </section>
 </header>
 
 <body>
     <main>
         <section class="productos">
-            <article class="card">
-                <img src="./img/imagen10 .jpg" alt="MINI LEMON PIE">
+            <article class="card"> <img src="./img/imagen10 .jpg" alt="MINI LEMON PIE">
                 <h2>MINI LEMON PIE</h2>
                 <p>Carne a cuchillo y Pollo</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-            <article class="card">
-                <img src="./img/imagen12.jpg" alt="Croissant">
+            <article class="card"> <img src="./img/imagen12.jpg" alt="Croissant">
                 <h2>FACTURAS AZUCARADAS</h2>
                 <p>Precio por docena.</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-            <article class="card">
-                <img src="./img/imagen13.jpg" alt="Imagen de la tarjeta">
+            <article class="card"> <img src="./img/imagen13.jpg" alt="Imagen de la tarjeta">
                 <h2>DESAYUNO</h2>
                 <p>Cafe capuccino y Crossaint</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-
-            <article class="card">
-                <img src="./img/imagen16.jpg" alt="Imagen de la tarjeta">
+            <article class="card"> <img src="./img/imagen16.jpg" alt="Imagen de la tarjeta">
                 <h2>MEDIALUNAS</h2>
                 <p>Por docena.</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-            <article class="card">
-                <img src="./img/imagen17.jpg" alt="Imagen de la tarjeta">
+            <article class="card"> <img src="./img/imagen17.jpg" alt="Imagen de la tarjeta">
                 <h2>CUPSCAKE</h2>
                 <p>Decoracion a gusto</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-            <article class="card">
-                <img src="./img/image6.jpg" alt="Imagen de la tarjeta">
+            <article class="card"> <img src="./img/image6.jpg" alt="Imagen de la tarjeta">
                 <h2>PAN PARA HAMBURGUESA</h2>
                 <p>Por 4 unidades.</p>
-                <div class="botonCarrito">
-                        <button class="boton">Agregar al carrito
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>              
-                </div>
+                <div class="botonCarrito"> <button class="boton">Agregar al carrito <i
+                            class="fa-solid fa-cart-shopping"></i> </button> </div>
             </article>
-
-
         </section>
-
-    
-
     </main>
-
+    <script src="./js/index.js"></script>
 </body>
 <footer class="footerContacto">
-
-
-    <section  class="nfoFooter">
+    <section class="nfoFooter">
         <div class="logoFooter"><img src="./img/logo2.png" alt="Rico & Sano"></div>
-    
-    <div class="redesFooter">
-         <a href="https://www.instagram.com/rico_y_sano_glutenfree/" target="blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-        <a href="https://wa.me/541130958848" target="blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" target="blank">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-    </div>     
-       
-            <div class="ulFooter">
-                <ul>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">Terminos y condiciones</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Politica de cookies</a></li>
-                </ul>
-            </div>
-        
+        <div class="redesFooter"> <a href="https://www.instagram.com/rico_y_sano_glutenfree/" target="blank"> <i
+                    class="fa-brands fa-instagram"></i> </a> <a href="https://wa.me/541130958848" target="blank"> <i
+                    class="fa-brands fa-whatsapp"></i> </a> <a href="#" target="blank"> <i
+                    class="fa-brands fa-facebook-f"></i> </a> </div>
+        <div class="ulFooter">
+            <ul>
+                <li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Politica de cookies</a></li>
+            </ul>
+        </div>
     </section>
     <section class="mapaFooter">
-
-        <div>
-            <iframe 
+        <div> <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13097.250134463668!2d-58.533448463330146!3d-34.84837355613232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0cf6e1e2e2d%3A0xf22ee15deb61d676!2sDe%C3%A1n%20Funes%20607%2C%20B1804FAK%20Ezeiza%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1758549414052!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-
+                referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
     </section>
     <div>
         <p>©2025 Rico&Sano.Todos los derechos reservados</p>
     </div>
 </footer>
+
 </html>
